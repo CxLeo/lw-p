@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${supply.variable} ${formula.variable} ${formulaMedium.variable}`}>
       <body
-        className={`antialiased`}
+        className={`antialiased overflow-x-hidden`}
       >
         {children}
       </body>

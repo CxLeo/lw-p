@@ -12,12 +12,14 @@ export default {
       'md':'768px',
       'lg':'1024px',
       'xl':'1441px',
-      '2xl':'1536px',
+      '2xl':'1560px',
     },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        paragraph:"#434343",
+        primary:"#F86F1A"
       },
       fontFamily:{
          supply:["var(--font-supply)"],
