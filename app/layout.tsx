@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localfont from 'next/font/local'
 import "./globals.css";
+import TopNav from "@/components/TopNav";
 
 const supply = localfont({
   src:[
@@ -41,10 +42,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${supply.variable} ${formula.variable} ${formulaMedium.variable}`}>
+    <html lang="en" className={`${supply.variable} ${formula.variable} ${formulaMedium.variable} scroll-smooth`}>
       <body
         className={`antialiased overflow-x-hidden`}
       >
+        <TopNav/>
         {children}
       </body>
     </html>
