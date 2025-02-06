@@ -1,4 +1,5 @@
 "use client"
+import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import { useState, useEffect } from 'react';
@@ -43,6 +44,7 @@ export default function Home() {
       <div className="relative w-full lg:mx-0 mx-auto overflow-x-hidden">
         <Hero/>
         <Intro width={width}/>
+        <Experience width={width}/>
       </div>
     </main>
   );

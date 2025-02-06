@@ -15,7 +15,7 @@ function Hero() {
     const [isSelfileHovered, setSelfileHovered] = React.useState(false);
 
   return (
-    <div id="hero" className='h-screen xl:pt-[255px] lg:pt-[205px] pt-[200px] w-full'>
+    <section id="hero" className='xl:pt-[255px] lg:pt-[205px] pt-[200px] pb-[150px] w-full'>
         <div>
             <div className='lg:max-w-[75%] flex flex-col'>
                 {/* LHS */}
@@ -59,7 +59,7 @@ function Hero() {
                 {/* RHS Clock */}
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

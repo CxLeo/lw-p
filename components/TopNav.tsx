@@ -46,20 +46,21 @@ function TopNav() {
           }
         };
         const handleScroll = ()=>{
-            console.log(window.scrollY);
-            if (window.scrollY < window.innerHeight){
-                setActive([true,false,false,false,false,false]);
-            }else if (window.scrollY < window.innerHeight*2){
-                setActive([false,true,false,false,false,false]);
-            }else if (window.scrollY < window.innerHeight*3){
-                setActive([false,false,true,false,false,false]);
-            }else if (window.scrollY < window.innerHeight*4){    
-                setActive([false,false,false,true,false,false]);    
-            }else if (window.scrollY < window.innerHeight*5){
-                setActive([false,false,false,false,true,false]);
-            }else{
-                setActive([false,false,false,false,false,true]);
-            }
+            const sections = document.querySelectorAll('section');
+            const scrollPosition = window.scrollY;
+
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                const sectionTop = rect.top + window.scrollY;
+                const sectionBottom = sectionTop + rect.height;
+
+                // Check if the scroll position is inside the section
+                if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
+                const newActiveState = Array(sections.length).fill(false);
+                newActiveState[index] = true;
+                setActive(newActiveState);
+                }
+            });
         };
 
         window.addEventListener('scroll',handleScroll)
@@ -83,7 +84,7 @@ function TopNav() {
 
   return (
     <div className='mx-[25px] lg:mx-[60px] xl:mx-[150px] sticky top-4 z-[15] '>
-        <nav style={{width:wid, marginLeft:ml}} className=' flex bg-[#F3F3F3] rounded-[4px]   justify-between'>
+        <nav style={{width:wid, marginLeft:ml}} className=' lg:flex grid grid-cols-3 grid-rows-2 bg-[#F3F3F3] rounded-[4px]   justify-between'>
             {
                 items.map((item,idx) => (
                     <div key={idx}>
