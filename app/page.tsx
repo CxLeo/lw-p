@@ -1,4 +1,5 @@
 "use client"
+import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
@@ -45,6 +46,7 @@ export default function Home() {
         <Hero/>
         <Intro width={width}/>
         <Experience width={width}/>
+        <Contact width={width}/>
       </div>
     </main>
   );
