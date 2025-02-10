@@ -35,14 +35,14 @@ export default function Home() {
   return (
     <main className="w-screen lg:px-[60px] xl:px-[150px] px-[25px]">
       {/* background grid */}
-      <div className="absolute px-[25px] lg:px-[60px] xl:px-[150px] h-[600vh] -mt-2 w-screen  top-0 left-0 grid grid-row lg:grid-cols-4 grid-cols-1 gap-[20px] overflow-y-hidden">
+      <div className="absolute px-[25px] lg:px-[60px] xl:px-[150px] h-[700vh] -mt-[1px] w-screen  top-0 left-0 grid grid-row lg:grid-cols-4 grid-cols-1 gap-[20px] overflow-y-hidden">
         <div className="custom-dashed-border h-full abg-red-400"></div>
         <div className="custom-dashed-border h-full abg-blue-400"></div>
         <div className="custom-dashed-border h-full abg-yellow-400"></div>
-        <div className="custom-dashed-border h-full bg-primary"></div>
+        <div className="custom-dashed-border h-full lg:bg-primary"></div>
       </div>
       {/* Content */}
-      <div className="relative w-full lg:mx-0 mx-auto overflow-x-hidden">
+      <div className="relative w-full h-fit lg:mx-0 mx-auto overflow-hidden">
         <Hero/>
         <Intro width={width}/>
         <Experience width={width}/>

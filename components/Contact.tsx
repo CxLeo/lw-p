@@ -92,7 +92,7 @@ function Contact({ width }: { width: number }) {
     ];
 
     return (
-        <section id="contact" className="h-fit w-full xl:pt-[110px] lg:pt-[60px]">
+        <section id="contact" className="h-fit w-full xl:pt-[110px] lg:pt-[60px] pt-[120px]">
             <div
                 className="flex flex-col"
                 style={{

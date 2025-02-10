@@ -11,9 +11,9 @@ function ContactCard({ info }: { info: contactType }) {
                 target="_blank"
                 onHoverStart={() => setHovered(true)}
                 onHoverEnd={() => setHovered(false)}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: info.id / 6 }}
+                initial={{ opacity: 0, y: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.7, delay: info.id / 6, type:'spring' }}
                 viewport={{ once: true }}
                 className={`aspect-square rounded-full ${info.bgColor} border-[1px] border-dashed border-[#434343] flex flex-col justify-center items-center`}
             >
