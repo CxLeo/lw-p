@@ -92,7 +92,7 @@ function Contact({ width }: { width: number }) {
     ];
 
     return (
-        <section id="contact" className="h-fit w-full xl:pt-[110px] lg:pt-[60px] pt-[120px]">
+        <section id="contact" className="h-fit w-full xl:pt-[110px] lg:pt-[80px] pt-[120px]">
             <div
                 className="flex flex-col"
                 style={{
@@ -119,7 +119,7 @@ function Contact({ width }: { width: number }) {
                 </motion.p>
             </div>
 
-            <div className="grid grid-row lg:grid-cols-4 grid-cols-1 gap-[20px] mt-[60px]">
+            <div className="grid grid-row lg:grid-cols-4 grid-cols-2 gap-[20px] mt-[60px]">
                 {
                     contacts.map((contact,idx)=>(
                         <ContactCard key={idx} info={contact}/>

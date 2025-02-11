@@ -7,7 +7,7 @@ function Intro({ width }: { width: number }) {
   const cardWidth = width>640 ? `${(width-20) / 2 }px` : "100%";
 
   return (
-    <section id="intro" className=" w-full xl:pt-[110px] lg:pt-[60px] pt-[120px]">
+    <section id="intro" className=" w-full xl:pt-[110px] lg:pt-[80px] pt-[120px]">
       <div
         className="flex flex-col"
         style={{

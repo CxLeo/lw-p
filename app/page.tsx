@@ -3,6 +3,8 @@ import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
+import Project from "@/components/Project";
+import Skill from "@/components/Skill";
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -35,7 +37,7 @@ export default function Home() {
   return (
     <main className="w-screen lg:px-[60px] xl:px-[150px] px-[25px]">
       {/* background grid */}
-      <div className="absolute px-[25px] lg:px-[60px] xl:px-[150px] h-[700vh] -mt-[1px] w-screen  top-0 left-0 grid grid-row lg:grid-cols-4 grid-cols-1 gap-[20px] overflow-y-hidden">
+      <div className="absolute px-[25px] lg:px-[60px] xl:px-[150px] lg:h-[665vh] h-[820vh] -mt-[1px] w-screen  top-0 left-0 grid grid-row lg:grid-cols-4 grid-cols-1 gap-[20px] overflow-y-hidden">
         <div className="custom-dashed-border h-full abg-red-400"></div>
         <div className="custom-dashed-border h-full abg-blue-400"></div>
         <div className="custom-dashed-border h-full abg-yellow-400"></div>
@@ -46,6 +48,8 @@ export default function Home() {
         <Hero/>
         <Intro width={width}/>
         <Experience width={width}/>
+        <Skill width={width}/>
+        <Project width={width}/>
         <Contact width={width}/>
       </div>
     </main>
