@@ -19,7 +19,7 @@ interface ProjectCardProp{
 function ProjectCard({techs,title,description,url,link,index}:ProjectCardProp) {
     const bg = techs.map((tech,idx)=>{ return tech.color});
   return (
-    <div className='w-full flex flex-col space-y-4'>
+    <div className='w-full flex flex-col lg:space-y-4 space-y-2'>
         {/* cover */}
         <a href={link} target='_blank' className='w-full aoverflow-hidden relative rounded-[4px] bg-[#F3F3F3]'>
             <Image src={url} alt={title} width={900} height={600} className='object-cover w-full'/>
@@ -40,7 +40,7 @@ function ProjectCard({techs,title,description,url,link,index}:ProjectCardProp) {
             }
         </div>
         {/* text */}
-        <h2 className='text-paragraph font-formula text-[18px] leading-normal'>
+        <h2 className='text-paragraph font-formula text-[22px] leading-normal'>
             {title}
         </h2>
         <p className='text-paragraph font-formula text-[18px] leading-normal'>

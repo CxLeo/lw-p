@@ -2,6 +2,7 @@
 import { motion } from "motion/react";
 import React, { ReactNode } from "react";
 import ContactCard from "./ContactCard";
+import Footer from "./Footer";
 
 export type contactType = {
     id: number;
@@ -92,39 +93,45 @@ function Contact({ width }: { width: number }) {
     ];
 
     return (
-        <section id="contact" className="h-fit w-full xl:pt-[110px] lg:pt-[80px] pt-[120px]">
-            <div
-                className="flex flex-col"
-                style={{
-                    marginLeft: ml,
-                }}
-            >
-                <motion.h2
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7 }}
-                    viewport={{ once: true }}
-                    className="text-primary font-supply lg:text-[96px] text-[64px] leading-none"
+        <section id="contact" className="h-screen w-full xl:pt-[110px] lg:pt-[80px] pt-[120px]  grid grid-rows-[1fr_auto]">
+            <div className="flex flex-col">
+                <div
+                    className="flex flex-col"
+                    style={{
+                        marginLeft: ml,
+                    }}
                 >
-                    {"{"}Contact{"}"}
-                </motion.h2>
-                <motion.p
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7 }}
-                    viewport={{ once: true }}
-                    className="xl:mt-[31px] mt-[20px] text-paragraph font-formula lg:font-[18px] lg:leading-[23px] lg:max-w-[510px]"
-                >
-                    {`Feel free to reach out if you're interested in hiring me or if you'd like assistance in creating a website.`}
-                </motion.p>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7 }}
+                        viewport={{ once: true }}
+                        className="text-primary font-supply lg:text-[96px] text-[64px] leading-none"
+                    >
+                        {"{"}Contact{"}"}
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7 }}
+                        viewport={{ once: true }}
+                        className="xl:mt-[31px] mt-[20px] text-paragraph font-formula lg:font-[18px] lg:leading-[23px] lg:max-w-[510px]"
+                    >
+                        {`Feel free to reach out if you're interested in hiring me or if you'd like assistance in creating a website.`}
+                    </motion.p>
+                </div>
+
+                <div className="grid grid-row lg:grid-cols-4 grid-cols-2 gap-[20px] mt-[60px]">
+                    {
+                        contacts.map((contact,idx)=>(
+                            <ContactCard key={idx} info={contact}/>
+                        ))
+                    }
+                </div>
             </div>
 
-            <div className="grid grid-row lg:grid-cols-4 grid-cols-2 gap-[20px] mt-[60px]">
-                {
-                    contacts.map((contact,idx)=>(
-                        <ContactCard key={idx} info={contact}/>
-                    ))
-                }
+            <div>
+                <Footer/>
             </div>
         </section>
     );

@@ -30,7 +30,7 @@ function Experience({ width }: { width: number }) {
     return (
         <section
             id="experience"
-            className=" w-full xl:pt-[150px] lg:pt-[80px] pt-[120px] pb-[50px]"
+            className=" w-full xl:pt-[110px] lg:pt-[80px] pt-[120px] pb-[50px]"
         >
             <div
                 className="flex flex-col"
@@ -43,7 +43,7 @@ function Experience({ width }: { width: number }) {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
-                    className="text-primary font-supply lg:text-[96px] text-[50px] leading-none"
+                    className="text-primary font-supply lg:text-[96px] text-[40px] leading-none"
                 >
                     {"/*"}Experience{"*/"}
                 </motion.h2>

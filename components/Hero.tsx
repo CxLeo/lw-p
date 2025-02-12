@@ -15,20 +15,20 @@ function Hero() {
     const [isSelfileHovered, setSelfileHovered] = React.useState(false);
 
   return (
-    <section id="hero" className='xl:pt-[255px] lg:pt-[205px] pt-[200px] pb-[150px] w-full'>
+    <section id="home" className='xl:pt-[255px] lg:pt-[205px] pt-[150px] pb-[180px] w-full'>
         <div>
             <div className='lg:max-w-[75%] flex flex-col'>
                 {/* LHS */}
-                <div className='flex flex-row space-x-2'>
+                <div className='flex lg:flex-row flex-col lg:space-x-2'>
                     <h2 className='text-paragraph font-formula text-[18px] leading-[21.6px]'>Hi, I am</h2>
                     <motion.div
                         onHoverStart={() => setSelfileHovered(true)}
                         onHoverEnd={() => setSelfileHovered(false)}
                         initial={{ scale: 1,x:0,y:0 }}
                         whileHover={{ scale: 1.3, x: 5, y: -5 }}
-                        className='w-[60px] h-[60px] -mt-[25px] hover:border-[1.5px] border-primary border-dashed '
+                        className='lg:w-[60px] lg:h-[60px] lg:-mt-[25px] w-[250px] mt-[60px] lg:hover:border-[1.5px]  border-primary border-dashed '
                     >
-                        <Image src='/images/selfile.jpg' width={419} height={419} alt='Leo Wang' className='w-[60px] aspect-square rounded-2xl '/>
+                        <Image src='/images/selfile.jpg' width={419} height={419} alt='Leo Wang' className='lg:w-[60px] w-[250px] aspect-square rounded-2xl '/>
                     </motion.div>
                     {
                         isSelfileHovered && 
@@ -42,12 +42,12 @@ function Hero() {
                         </motion.p>
                     }
                 </div>
-                <h1 className='mt-[39px] text-primary font-supply lg:text-[160px] lg:leading-none text-[53px] leading-normal'>{'{'}Leo Wang{'}'}</h1>
-                <p className='mt-[56px] text-paragraph font-formula lg:font-[18px] lg:leading-[23px] lg:max-w-[512px]'>Driving innovation through code, creativity, and a passion for lifelong learning.</p>
+                <h1 className='lg:mt-[39px] mt-0 text-primary font-supply lg:text-[160px] lg:leading-none text-[53px] leading-normal'>{'{'}Leo Wang{'}'}</h1>
+                <p className='lg:mt-[56px] text-paragraph font-formula lg:font-[18px] lg:leading-[23px] lg:max-w-[512px]'>Driving innovation through code, creativity, and a passion for lifelong learning.</p>
                 <motion.button
                     whileTap={{ scale: 0.97 }}
                     whileHover={{ translateX: 10}}
-                    className='bg-primary rounded-md mt-[35px] h-[54px] lg:max-w-[32%] w-full '>
+                    className='bg-primary rounded-md lg:mt-[35px] mt-[60px] h-[54px] lg:max-w-[32%] w-full '>
                     <a download="LeoWangCV.pdf" href="/Resume_LW_2025.pdf"  className='w-full h-full  text-left px-[18px] pt-[18px] text-white font-formula lg:text-[18px] leading-[21px] flex flex-row justify-between'>
                         <p>Download CV</p>
                         <ArrowRight/>

@@ -6,11 +6,11 @@ function TopNav() {
     const items = [
         {
             label:'Home',
-            link:'/#hero'
+            link:'/#home'
         },
         {
             label:'Info',
-            link:'/#intro'
+            link:'/#info'
         },
         {
             label:'Experience',
@@ -55,7 +55,7 @@ function TopNav() {
                 const sectionBottom = sectionTop + rect.height;
 
                 // Check if the scroll position is inside the section
-                if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
+                if (scrollPosition+4 >= sectionTop && scrollPosition+4 <= sectionBottom) {
                 const newActiveState = Array(sections.length).fill(false);
                 newActiveState[index] = true;
                 setActive(newActiveState);
@@ -83,7 +83,7 @@ function TopNav() {
     const ml = width>640 ? `${(width-60)/4+20}px` : "0px";
 
   return (
-    <div className='mx-[25px] lg:mx-[60px] xl:mx-[150px] sticky top-4 z-[15] '>
+    <div className='mx-[25px] lg:mx-[60px] xl:mx-[150px] sticky top-4 z-[15] lg:-mt-[40px] -mt-[80px]'>
         <nav style={{width:wid, marginLeft:ml}} className=' lg:flex grid grid-cols-3 grid-rows-2 bg-[#F3F3F3] rounded-[4px]   justify-between'>
             {
                 items.map((item,idx) => (

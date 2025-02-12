@@ -25,7 +25,7 @@ function Project({width}:{width:number}) {
     return (
         <section
             id="projects"
-            className="w-full xl:pt-[150px] lg:pt-[80px] pt-[120px]"
+            className="w-full xl:pt-[110px] lg:pt-[80px] pt-[120px] lg:pb-[120px]"
         >
             <div
                 className="flex flex-col"
@@ -44,7 +44,7 @@ function Project({width}:{width:number}) {
                 </motion.h2>
             </div>
 
-            <div className="mt-[60px] grid grid-row lg:grid-cols-4 grid-cols-1 gap-[20px]">
+            <div className="lg:mt-[60px] mt-[30px] grid grid-row lg:grid-cols-4 grid-cols-1 lg:gap-[20px] gap-[30px]">
                 {
                     projects.map((project,idx)=>(
                         <motion.div
