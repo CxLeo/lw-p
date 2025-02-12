@@ -7,13 +7,13 @@ const exps = [
         company:"DMSolving Cooperation",
         title:"Full Stack Developer",
         techs: ["/ Next.js","/ Express+Node.js" ,"/ Redis", "/ PostgreSQL","/ Redux","/ Docker"],
-        time:"Sep 2023 - Present"
+        time:"May 2024 - Present"
     },
     {
         company:"ID Cosmetic Clinic",
         title:"Web Developer",
         techs:["/ React.js","/ Sanity","/ Redux","/ GatsbyJS",'/','/'],
-        time:"June 2023 - Sep 2023"
+        time:"Nov 2023 - May 2024"
     },
     {
         company:"Freelancer",
