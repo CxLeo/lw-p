@@ -57,14 +57,13 @@ function Skill({ width }: { width: number }) {
                 </motion.p> */}
             </div>
 
-            {/* <SkillCard label={"React"} url={"/logos/react.png"}/> */}
             <div className="grid grid-row lg:grid-cols-4 lg:mt-[80px] mt-[30px] grid-cols-1 gap-x-[20px] gap-y-[25px]">
                 {
                     skills.map((skill,idx)=>(
                         <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4, delay:idx/8, type:"spring" }}
+                        transition={{ duration: 0.4, delay:idx/10, type:"spring" }}
                         viewport={{ once: true }}
                         key={idx+skill.label}>
                             <SkillCard label={skill.label} url={skill.url}/>

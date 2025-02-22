@@ -43,7 +43,7 @@ function Experience({ width }: { width: number }) {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
-                    className="text-primary font-supply lg:text-[96px] text-[40px] leading-none"
+                    className="text-primary font-supply lg:text-[86px] text-[40px] leading-none"
                 >
                     {"/*"}Experience{"*/"}
                 </motion.h2>

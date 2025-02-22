@@ -24,7 +24,7 @@ export default function Home() {
       }
 
       if (contentRef.current) {
-        setContentHeight(contentRef.current.offsetHeight+contentRef.current.offsetTop); // Get the height of the content div
+        setContentHeight(contentRef.current.offsetHeight+contentRef.current.offsetTop+20); // Get the height of the content div
       }
     };
 

@@ -19,7 +19,7 @@ function NavItem({ item, active }: { item: NavItemProp; active: boolean }) {
                     ease: "easeInOut",
                 }}
                 href={item.link}
-                className={` text-center pb-[8px] pt-[12px] min-[1400px]:px-[25px] min-[1200px]:px-[17px] px-[15px] font-normal text-paragraph font-supply leading-none tracking-[-0.48px] text-[16px] text-lg ${
+                className={` text-center pb-[8px] pt-[12px] min-[1400px]:px-[25px] min-[1200px]:px-[17px] px-[15px] font-normal text-paragraph font-supply leading-none tracking-[-0.48px] text-[16px] ${
                     active ? "bg-[#89FDA2] border-[1px] border-dashed border-[#434343] " : ""
                 }`}
             >
