@@ -4,7 +4,7 @@ import ExperienceCard from "./ExperienceCard";
 
 const exps = [
     {
-        company:"DMSolving Cooperation",
+        company:"DMSolving Corporation",
         title:"Full Stack Developer",
         techs: ["/ Next.js","/ Express+Node.js" ,"/ Redis", "/ PostgreSQL","/ Redux","/ Docker"],
         time:"May 2024 - Present"
