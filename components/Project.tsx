@@ -3,13 +3,13 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 
 const projects=[
-    // {
-    //     title:"Chat Pdf",
-    //     description:"A full stack application in which user can chat with pdf using AI",
-    //     techs:[],
-    //     url:"/images/chat.png",
-    //     link:"https://aichat-pdf.vercel.app/"
-    // },
+    {
+        title:"Chat Pdf",
+        description:"A full stack application in which user can chat with pdf using AI",
+        techs:[],
+        url:"/images/chat.png",
+        link:"https://aichat-pdf.vercel.app/"
+    },
     {
         title:"Portfolio Website", 
         description:"A portfolio website made for a UI/UX designer",
