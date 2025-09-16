@@ -15,7 +15,8 @@ const projects=[
         description:"A portfolio website made for a UI/UX designer",
         techs:[],
         url:"/images/designer.png",
-        link:"https://designerfeiran.com/"
+        // link:"https://designerfeiran.com/"
+        link:"https://portfolio-kc9devklk-leos-projects-d273b717.vercel.app/"
     }
 ]
 // "react,redux,next,framer-motion"
