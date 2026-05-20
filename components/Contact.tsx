@@ -88,7 +88,7 @@ function Contact({ width }: { width: number }) {
             ),
             bgColor:"bg-[#F5DE8F]",
             label:"My Resume",
-            href: "/Resume_LW_2025.pdf"
+            href: "/Resume_LW_2026.pdf"
         },
     ];
 

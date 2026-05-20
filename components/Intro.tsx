@@ -48,7 +48,7 @@ function Intro({ width }: { width: number }) {
         </div>
 
         <div className="flex-1 lg:min-h-[483px] min-h-[300px] bg-[#F3F3F3] flex flex-col justify-center items-center py-10">
-            <h1 className="text-primary font-supply lg:text-[240px] text-[120px] leading-none">1.5</h1>
+            <h1 className="text-primary font-supply lg:text-[240px] text-[120px] leading-none">2</h1>
             <h3 className="text-paragraph font-formula lg:text-[18px] text-[16px] lg:leading-normal">Exp</h3>
         </div>
 

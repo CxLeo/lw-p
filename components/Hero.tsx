@@ -48,7 +48,7 @@ function Hero() {
                     whileTap={{ scale: 0.97 }}
                     whileHover={{ translateX: 10}}
                     className='bg-primary rounded-md lg:mt-[35px] mt-[60px] h-[54px] lg:max-w-[32%] w-full '>
-                    <a download="LeoWangCV.pdf" href="/Resume_LW_2025.pdf"  className='w-full h-full  text-left px-[18px] pt-[18px] text-white font-formula lg:text-[18px] leading-[21px] flex flex-row justify-between'>
+                    <a download="LeoWangCV.pdf" href="/Resume_LW_2026.pdf"  className='w-full h-full  text-left px-[18px] pt-[18px] text-white font-formula lg:text-[18px] leading-[21px] flex flex-row justify-between'>
                         <p>Download CV</p>
                         <ArrowRight/>
                     </a>
